@@ -74,6 +74,25 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Jugadora.vb" />
+    <Compile Include="Dominio\Juego.vb" />
+    <Compile Include="Dominio\Partido.vb" />
+    <Compile Include="Dominio\Edicion.vb" />
+    <Compile Include="Dominio\Torneo.vb" />
+    <Compile Include="Dominio\Pais.vb" />
+    <Compile Include="Persistencia\AgenteBD.vb" />
+    <Compile Include="Persistencia\JuegoDAO.vb" />
+    <Compile Include="Persistencia\PartidoDAO.vb" />
+    <Compile Include="Persistencia\EdicionDAO.vb" />
+    <Compile Include="Persistencia\TorneoDAO.vb" />
+    <Compile Include="Persistencia\PaisDAO.vb" />
+    <Compile Include="Persistencia\JugadoraDAO.vb" />
+    <Compile Include="Presentacion\IU_principal.Designer.vb">
+      <DependentUpon>IU_principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\IU_principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\IU_conectar.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -120,9 +139,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dominio\" />
-    <Folder Include="Persistencia\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

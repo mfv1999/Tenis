@@ -22,35 +22,35 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ConectarButton = New System.Windows.Forms.Button()
+        Me.DefaultTextLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'ConectarButton
         '
-        Me.Button1.Location = New System.Drawing.Point(181, 105)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(257, 102)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ConectarButton.Location = New System.Drawing.Point(101, 79)
+        Me.ConectarButton.Name = "ConectarButton"
+        Me.ConectarButton.Size = New System.Drawing.Size(257, 102)
+        Me.ConectarButton.TabIndex = 0
+        Me.ConectarButton.Text = "CONECTAR AL SISTEMA "
+        Me.ConectarButton.UseVisualStyleBackColor = True
         '
-        'Label1
+        'DefaultTextLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(49, 32)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Label1"
+        Me.DefaultTextLabel.AutoSize = True
+        Me.DefaultTextLabel.Location = New System.Drawing.Point(49, 32)
+        Me.DefaultTextLabel.Name = "DefaultTextLabel"
+        Me.DefaultTextLabel.Size = New System.Drawing.Size(371, 17)
+        Me.DefaultTextLabel.TabIndex = 1
+        Me.DefaultTextLabel.Text = "Bienvenido al sistema tenis , pulse el boton para comezar"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(524, 238)
+        Me.Controls.Add(Me.DefaultTextLabel)
+        Me.Controls.Add(Me.ConectarButton)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -58,6 +58,6 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents ConectarButton As Button
+    Friend WithEvents DefaultTextLabel As Label
 End Class
